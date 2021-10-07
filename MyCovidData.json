@@ -2,8 +2,8 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     
     "title": {
-      "text": "TITLE HERE",
-      "subtitle":"Sub-title here",
+      "text": "Covid Chart",
+      "subtitle":"Bristol, Glasgow",
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10,
       "anchor": "start",
@@ -19,7 +19,7 @@
         
         {"filter": {
           "field": "areaName", 
-          "oneOf": ["Bristol, City of", "Sheffield", "Glasgow City"]}
+          "oneOf": ["Bristol, City of", "Glasgow City"]}
           }
   
   
@@ -51,7 +51,7 @@
         "field": "areaName",
         "type": "nominal",
         "scale": {"scheme": "set1"},
-        "title": "LEGEND TITLE",
+        "title": "null",
         "legend": {
           "orient": "top-left", 
           "fillColor": "#FcFdFd"}
