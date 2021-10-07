@@ -19,7 +19,7 @@
         
         {"filter": {
           "field": "areaName", 
-          "oneOf": ["Bristol, City of", "Sheffield", "Z"]}
+          "oneOf": ["Bristol, City of", "Sheffield", "Glasgow City"]}
           }
   
   
@@ -41,7 +41,7 @@
       },
   
       "y": {
-        "field": "VARIABLE YOU ARE MEASURING HERE",
+        "field": "newCasesBySpecimenDate",
         "type": "quantitative",
         "title": null,
         "axis": {"grid": false}
