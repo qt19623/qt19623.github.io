@@ -13,7 +13,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@300&display=swap');
 
 canvas {
-    border: 1px solid;
+    border: 0px solid;
     background: rgb(21, 32, 43);
 }
 
@@ -30,7 +30,7 @@ h1, span {
 	font-family: "Catamaran";
 	font-variant: small-caps;
 	font-size: 60px;
-	color:whitesmoke;
+	color:rgb(0, 0, 0);
 	font-weight: 900;
 	font-kerning: 50;
 	margin: 0px 0px 30px 0px  ;
@@ -41,7 +41,7 @@ h1, span {
 
 .heading{
     border-width: 0px;
-    border-color: white;
+    border-color: rgb(21, 32, 43);
     border-style: dashed;
     border-radius: 10px;
     text-align: left;
