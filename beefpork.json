@@ -1,0 +1,15 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "data":{
+    "url": "https://raw.githubusercontent.com/qt19623/qt19623.github.io/main/beefpork.csv"
+  },
+"mark":"line",
+
+
+"encoding": {
+"x":{"field":"DATE", "type": "ordinal"},
+"y":{"field":"value", "type": "quantitative"},
+"color":{"field":"meat"}
+}
+}
