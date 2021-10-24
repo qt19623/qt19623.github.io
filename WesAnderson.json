@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple bar chart with embedded data",
+
+ "title": {
+    "text": "Revenue of Wes Anderson films",
+    "subtitle": "",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"},
+
+  "data": {
+    "values": [
+      {"a":"Bottle Rocket", "b": 0.560069},{"a":"Rushmore", "b": 17.195500},{"a":"The Royal Tenenbaums", "b": 71.441250},{"a":"The Life Aquatic With Steve Zissou", "b": 34.808403},{"a":"The Darjeeling Limited", "b": 35.307949},{"a":"Fantastic Mr.Fox", "b": 46.472606},{"a":"Moonrise Kingdom", "b": 68.263166},{"a":"The Grand Budapest Hotel", "b": 172.940180},{"a":"Isle of Dogs", "b": 64.241499}
+    ]
+    },
+  
+"mark":{
+  "type" : "bar",
+  "color" :"violet",
+  "size" : 17
+},
+"encoding": {
+  "y":{"field":"a","type":"nominal", "title":"Title"},
+  "x":{"field":"b", "type":"quantitative","title":"Revenue (100,000$)"}
+}
+}
