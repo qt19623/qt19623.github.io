@@ -7,8 +7,9 @@
 "mark":"line",
 
 
+
 "encoding": {
-"x":{"field":"DATE", "type": "ordinal"},
+"x":{"field":"DATE", "type": "temporal"},
 "y":{"field":"value", "type": "quantitative"},
 "color":{"field":"meat"}
 }
