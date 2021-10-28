@@ -1,0 +1,21 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data":{
+      "url":"https://api.beta.ons.gov.uk/v1/datasets/ageing-population-projections/editions/time-series/versions/1/observations?time=*&geography=K02000001&sex=all&unitofmeasure=percentage&agegroups=16-64",
+      "format":{
+        "type":"json",
+        "property":"observations"
+      }
+      },
+
+    "mark": "line",
+
+  
+    "encoding": {
+      
+      "x": {"field": "dimensions.Time.id", "type": "temporal", "title": null},
+      
+      "y": {"field": "observation", "type": "quantitative", "title": null}
+      
+
+}}
