@@ -1,0 +1,42 @@
+
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    
+    "title": {
+      "text": "veganism google trends",
+      "subtitle":"world from 2004",
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"
+    },
+    
+     "data": {
+      "url": "https://raw.githubusercontent.com/qt19623/qt19623.github.io/main/project/chart1/multiTimeline.csv",
+      "format": {"type": "csv"}
+    },
+
+    
+  
+    "height": 300,
+    "width": 400,
+     
+    "mark": {"type": "line"},
+   
+    "encoding": {
+  
+      "x": {
+        "field": "date",
+        "type": "temporal",
+        "title": null
+      },
+  
+      "y": {
+        "field": "value",
+        "type": "quantitative",
+        "title": null,
+        "axis": {"grid": false}
+      }
+  
+  }
+  }
