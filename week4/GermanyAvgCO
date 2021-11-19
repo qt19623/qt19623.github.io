@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "data":{
-      "url":"https://api.v2.emissions-api.org/api/v2/carbonmonoxide/average.json?country=DE&begin=2020-02-01&end=2020-03-01"
+      "url":"https://api.v2.emissions-api.org/api/v2/carbonmonoxide/average.json?country=DE&begin=2021-08-01"
           },
 
     "mark": "bar",
