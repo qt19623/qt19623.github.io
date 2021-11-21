@@ -1,0 +1,21 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data":{
+      "url":"https://raw.githubusercontent.com/qt19623/qt19623.github.io/main/week5/data_FRED-CXUANIMALLB0504M.json",
+      "format":{
+        "type":"json",
+        "property":"observations"
+      }
+      },
+
+    "mark": "line",
+
+  
+    "encoding": {
+      
+      "x": {"field": "date", "type": "temporal", "title": null},
+      
+      "y": {"field": "value", "type": "quantitative", "title": null}
+      
+
+}}
