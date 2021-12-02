@@ -54,7 +54,10 @@ a:link {
   text-decoration: none;
 }
   </style>
+    
+  <h2>Embedding three charts</h2> 
   
+  <h3>Covid cases: UK regions</h3>
 <!--Chart 1 -->
   <div class="chart" id="chart1">
       <script>
@@ -62,7 +65,7 @@ a:link {
         vegaEmbed('#chart1', myChart1);
       </script>
   </div>
-
+  <h3>UK productivity</h3>
 <!--Chart 2 -->
 <div class="chart" id="chart2">
     <script>
@@ -70,7 +73,7 @@ a:link {
       vegaEmbed('#chart2', myChart2);
     </script>
 </div>
-
+<h3>Food-CO2 Greenhouse gas emissions</h3>
 <!--Chart 3 -->
 <div class="chart" id="chart3">
     <script>
@@ -79,21 +82,33 @@ a:link {
     </script>
 </div>
   
+
+  <h2>Hosting data</h2>   
+  
+<h3>Covid cases: Bristol and Sheffield</h3>
+  <p>Chart from a given API</p>
 <!--Chart 4 -->
 <div class="chart" id="chart4">
     <script>
-      var myChart4 = "week2/MyCovidData.json";
+      var myChart4 = "week2/MyCovidData2.json";
       vegaEmbed('#chart4', myChart4);
     </script>
 </div>
 
+<h3>Covid cases: Bristol and Glasgow</h3>
+  <p>Chart from the same data saved in Github</p>
     <!--Chart 5 -->
 <div class="chart" id="chart5">
     <script>
-      var myChart5 = "week2/MyCovidData2.json";
+      var myChart5 = "week2/MyCovidData.json";
       vegaEmbed('#chart5', myChart5);
     </script>
 </div>
+  
+   <h2>Editing data, writing JSON by hand</h2> 
+<h3>Revenue of Wes Anderson films</h3>
+  <p>Chart using JSON written by hand</p>  
+  
     <!--Chart 6 -->
 <div class="chart" id="chart6">
     <script>
@@ -101,6 +116,8 @@ a:link {
       vegaEmbed('#chart6', myChart6);
     </script>
 </div>
+   <h3>Production of Beef and Pork</h3>
+  <p>Chart using data edited (two data combined)</p>  
     <!--Chart 7 -->
 <div class="chart" id="chart7">
     <script>
@@ -108,6 +125,10 @@ a:link {
       vegaEmbed('#chart7', myChart7);
     </script>
 </div>
+  
+  <h2>API driven charts</h2>   
+  
+<h3>ONS ageing population</h3>
     <!--Chart 8 -->
 <div class="chart" id="chart8">
     <script>
@@ -115,12 +136,18 @@ a:link {
       vegaEmbed('#chart8', myChart8);
     </script>
 </div>
+    
+<h3>Daily Average CO-value of Germany from August 2021</h3>
      <!--Chart 9 -->
 <div class="chart" id="chart9">
     <script>
       var myChart9 = "week4/GermanyAvgCO.json";
       vegaEmbed('#chart9', myChart9);
     </script>
+  
+   <h2>Loops and APIs</h2> 
+<h3>Expenditures: Meats, Poultry, Fish, and Eggs by Size of Consumer Unit: Two People in Consumer Unit</h3>
+  
 </div>
    <!--Chart 10 -->
 <div class="chart" id="chart10">
@@ -129,6 +156,9 @@ a:link {
       vegaEmbed('#chart10', myChart10);
     </script>
 </div>
+  
+  <h3>Expenditures: Meats, Poultry, Fish, and Eggs by Size of Consumer Unit: Three People in Consumer Unit</h3>
+
      <!--Chart 11 -->
 <div class="chart" id="chart11">
     <script>
@@ -136,6 +166,9 @@ a:link {
       vegaEmbed('#chart11', myChart11);
     </script>
 </div>
+  
+  <h3>Expenditures: Meats, Poultry, Fish, and Eggs by Size of Consumer Unit: Four People in Consumer Unit</h3>
+
      <!--Chart 12 -->
 <div class="chart" id="chart12">
     <script>
@@ -143,6 +176,9 @@ a:link {
       vegaEmbed('#chart12', myChart12);
     </script>
 </div>
+  
+  <h3>Expenditures: Meats, Poultry, Fish, and Eggs by Size of Consumer Unit: Five or More People in Consumer Unit </h3>
+
      <!--Chart 13 -->
 <div class="chart" id="chart13">
     <script>
@@ -150,7 +186,10 @@ a:link {
       vegaEmbed('#chart13', myChart13);
     </script>
 </div>
-</body>
+  
+<h2>Loops and scrapers</h2> 
+<h3>Income Gini coefficient World 1988–2013</h3>
+  
      <!--Chart 14 -->
 <div class="chart" id="chart14">
     <script>
