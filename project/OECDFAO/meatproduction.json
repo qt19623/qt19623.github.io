@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data":{
+      "url":"https://raw.githubusercontent.com/qt19623/qt19623.github.io/main/HIGH_AGLINK_2021_03122021153343304.csv"
+      },
+   "title": {
+    "text": "UK meat production ",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+
+    "mark": "line",
+
+     "transform":[
+        {"filter": {
+          "field": "VARIABLE", 
+          "equal": "QP"}
+          }
+      ],
+    
+  
+    "encoding": {
+      
+      "x": {"field": "TIME", "type": "temporal", "title": null},
+      
+      "y": {"field": "Value", "type": "quantitative", "title": null},
+
+      "color":{"field":"Commodity"}
+      
+
+}}
