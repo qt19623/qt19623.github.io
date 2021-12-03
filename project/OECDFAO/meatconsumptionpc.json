@@ -16,7 +16,7 @@
      "transform":[
         {"filter": {
           "field": "VARIABLE", 
-          "equal": "QC"}
+          "equal": "FO__PC"}
           }
       ],
     
