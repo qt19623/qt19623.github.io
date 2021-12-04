@@ -14,9 +14,8 @@
     "mark": "line",
 
      "transform":[
-        {"filter": {
-          "field": "VARIABLE", 
-          "equal": "FO__PC"}
+        {"filter": {"field": "VARIABLE", "equal": "FO__PC"}},
+    {"filter":{"timeUnit": "year","field":"TIME", "range":[2010,2020]}
           }
       ],
     
