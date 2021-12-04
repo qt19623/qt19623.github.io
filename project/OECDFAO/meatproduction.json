@@ -14,13 +14,10 @@
     "mark": "line",
 
      "transform":[
-        {"filter": {
-          "field": "VARIABLE", 
-          "equal": "QP"}
+        {"filter": {"field": "VARIABLE", "equal": "ECOE__TOT"}},
+        {"filter":{"timeUnit": "year","field":"TIME", "range":[2010,2020]}
           }
       ],
-    
-  
     "encoding": {
       
       "x": {"field": "TIME", "type": "temporal", "title": null},
