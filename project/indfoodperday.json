@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {"url": "https://raw.githubusercontent.com/qt19623/qt19623.github.io/main/project/indfoodperday.csv"},
+  "mark": "bar",
+"transform":[{"filter":{"field":"category",
+ "oneOf":["Total fruit", "Total vegetables", "Total fish", "Total red meat ", "Total white meat "]}}],
+
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "temporal",
+      "title": "Survey year"
+    },
+    "y": {
+      "field":"value",
+      "aggregate":"value",
+      "type": "quantitative",
+      "scale": {"domain":[0,400]}},
+
+    "color": {
+      "field": "category",
+      "type": "nominal",
+      
+      "title": "category of food"
+    }
+  }
+}
