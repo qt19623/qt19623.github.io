@@ -1,0 +1,69 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {"url": "https://raw.githubusercontent.com/qt19623/qt19623.github.io/main/project/indfoodperday.csv"
+  },
+  "height" : 200,
+  "width" : 500,
+  "encoding": {
+    "tooltip" : [
+      {"field" : "year"},
+      {"field" : "value"},
+      {"field" : "category"}
+    ],
+    "y": {"axis": {"title": "Number of points"}},
+    "x": {"field": "year", "type": "ordinal", "axis": {"labelAngle": 0}}
+  },
+  "layer": [
+    {
+      "transform":[{"filter":{"field":"category",
+ "oneOf":["Total fruit", "Total vegetables"]}}],
+      "mark": {"type": "bar", "xOffset": -16, "size": 10},
+      "encoding": {
+        "y": {
+          "field": "value",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "category",
+          "type": "nominal",
+          "title": "category",
+          "legend" : null
+        }
+      }
+    },
+    {
+       "transform":[{"filter":{"field":"category",
+ "oneOf":[ "Total fish", "Total red meat", "Total white meat"]}}],
+      "mark": {
+        "type": "bar", "size": 10, "xOffset": 16      },
+      "encoding": {
+        "y": {
+          "field": "value",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "category",
+          "type": "nominal",
+        
+          "legend" : null
+        }
+      }
+    },
+    {
+       "transform":[{"filter":{"field":"category",
+ "oneOf":["Beef","Lamb","Processed poultry"]}}],
+       "mark": {
+        "type": "line"  },
+      "encoding": {
+        "y": {
+          "field": "value",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "category",
+          "type": "nominal",
+        
+          "legend" : null
+    }}}
+  ]
+}
