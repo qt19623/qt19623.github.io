@@ -3,12 +3,12 @@
   "data": {"url": "https://raw.githubusercontent.com/qt19623/qt19623.github.io/main/project/indfoodperday.csv"},
   "mark": "bar",
 "transform":[{"filter":{"field":"category",
- "oneOf":["Total fruit", "Total vegetables", "Total fish", "Total red meat ", "Total white meat "]}}],
+ "oneOf":["Total fruit", "Total vegetables", "Total fish", "Total red meat", "Total white meat"]}}],
 
   "encoding": {
     "x": {
       "field": "year",
-      "type": "temporal",
+      "type": "ordinal",
       "title": "Survey year"
     },
     "y": {
