@@ -22,7 +22,7 @@
     {
       "transform":[{
 "filter": {"field":"year", "equal": "08-Sep"} }],
-      "mark": {"type": "bar", "xOffset": -16, "size": 10},
+      "mark": {"type": "bar", "xOffset": -40, "size": 10},
       "encoding": {
         "y": {
           "field": "value",
@@ -39,7 +39,7 @@
     {
       "transform":[{
 "filter": {"field":"year", "equal": "09-Oct"} }],
-      "mark": {"type": "bar", "xOffset": -16, "size": 10},
+      "mark": {"type": "bar", "xOffset": -30, "size": 10},
       "encoding": {
         "y": {
           "field": "value",
@@ -56,7 +56,7 @@
      {
       "transform":[{
 "filter": {"field":"year", "equal": "10-Nov"} }],
-      "mark": {"type": "bar", "xOffset": -16, "size": 10},
+      "mark": {"type": "bar", "xOffset": -20, "size": 10},
       "encoding": {
         "y": {
           "field": "value",
@@ -73,7 +73,7 @@
      {
       "transform":[{
 "filter": {"field":"year", "equal": "11-Dec"} }],
-      "mark": {"type": "bar", "xOffset": -16, "size": 10},
+      "mark": {"type": "bar", "xOffset": -10, "size": 10},
       "encoding": {
         "y": {
           "field": "value",
@@ -90,7 +90,7 @@
      {
       "transform":[{
 "filter": {"field":"year", "equal": "2012-13"} }],
-      "mark": {"type": "bar", "xOffset": -16, "size": 10},
+      "mark": {"type": "bar", "xOffset": 0, "size": 10},
       "encoding": {
         "y": {
           "field": "value",
@@ -107,7 +107,7 @@
      {
       "transform":[{
 "filter": {"field":"year", "equal": "2013-14"} }],
-      "mark": {"type": "bar", "xOffset": -16, "size": 10},
+      "mark": {"type": "bar", "xOffset": 10, "size": 10},
       "encoding": {
         "y": {
           "field": "value",
@@ -124,7 +124,7 @@
      {
       "transform":[{
 "filter": {"field":"year", "equal": "2014-15"} }],
-      "mark": {"type": "bar", "xOffset": -16, "size": 10},
+      "mark": {"type": "bar", "xOffset": 20, "size": 10},
       "encoding": {
         "y": {
           "field": "value",
@@ -141,7 +141,7 @@
      {
       "transform":[{
 "filter": {"field":"year", "equal": "2015-16"} }],
-      "mark": {"type": "bar", "xOffset": -16, "size": 10},
+      "mark": {"type": "bar", "xOffset": 30, "size": 10},
       "encoding": {
         "y": {
           "field": "value",
@@ -158,7 +158,7 @@
      {
       "transform":[{
 "filter": {"field":"year", "equal": "2016-17"} }],
-      "mark": {"type": "bar", "xOffset": -16, "size": 10},
+      "mark": {"type": "bar", "xOffset": 40, "size": 10},
       "encoding": {
         "y": {
           "field": "value",
