@@ -2,7 +2,25 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "data": {"url": "https://raw.githubusercontent.com/qt19623/qt19623.github.io/main/project/indfoodperday.csv"},
   "mark": "bar",
-"transform":[{"filter":{"field":"category",
+
+  "selection": {
+    "Region": {
+      "type": "single",
+      "fields": ["category"],
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+         "Total fruit",
+        "Total fish"
+        ],
+        "name": "Pick a region: "
+      }
+    }
+  },
+"transform":[
+    {"filter": {"selection": "Region"}},
+    {"filter":{"field":"category",
  "oneOf":["Total fruit", "Total vegetables", "Total fish", "Total red meat", "Total white meat"]}}],
 
   "encoding": {
@@ -13,7 +31,6 @@
     },
     "y": {
       "field":"value",
-      "aggregate":"value",
       "type": "quantitative",
       "scale": {"domain":[0,400]}},
 
