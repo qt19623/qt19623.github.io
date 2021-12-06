@@ -1,3 +1,5 @@
+
+
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "data": {"url": "https://raw.githubusercontent.com/qt19623/qt19623.github.io/main/project/indfoodperday.csv"
@@ -32,6 +34,7 @@
       }
     },
     {
+      
        "transform":[{"filter":{"field":"category",
  "oneOf":[ "Total fish", "Total red meat", "Total white meat"]}}],
       "mark": {
@@ -49,8 +52,23 @@
         }
       }
     },
-    {
-       "transform":[{"filter":{"field":"category",
+    {"selection": {
+    "Region": {
+      "type": "single",
+      "fields": ["category"],
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+         "Lamb",
+        "Beef"
+        ],
+        "name": "Pick a region: "
+      }
+    }
+  },
+       "transform":[ {"filter": {"selection": "Region"}},
+       {"filter":{"field":"category",
  "oneOf":["Beef","Lamb","Processed poultry"]}}],
        "mark": {
         "type": "line"  },
