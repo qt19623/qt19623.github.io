@@ -1,0 +1,210 @@
+
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {"url": "https://raw.githubusercontent.com/qt19623/qt19623.github.io/main/project/environmental%20impact.csv"
+  },
+  "height" : 200,
+  "width" : 500,
+  "transform":[{"filter":{"field":"type",
+ "oneOf":["GHG", "Water Use", "Land Use"]}}],
+  "encoding": {
+    "tooltip" : [
+      {"field" : "year"},
+      {"field" : "value"},
+       {"field" : "type"},
+      {"field" : "category"}
+    ],
+    "y": {"axis": {"title": "Number of points"}},
+    "x": {"field": "type", "type": "nominal", "axis": {"labelAngle": 0}}
+   
+  },
+  "layer": [
+    {
+      "transform":[{
+"filter": {"field":"year", "equal": "08-Sep"} }],
+      "mark": {"type": "bar", "xOffset": -16, "size": 10},
+      "encoding": {
+        "y": {
+          "field": "value",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "category",
+          "type": "nominal",
+          "title": "category",
+          "legend" : null
+        }
+      }
+    },
+    {
+      "transform":[{
+"filter": {"field":"year", "equal": "09-Oct"} }],
+      "mark": {"type": "bar", "xOffset": -16, "size": 10},
+      "encoding": {
+        "y": {
+          "field": "value",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "category",
+          "type": "nominal",
+          "title": "category",
+          "legend" : null
+        }
+      }
+    },
+     {
+      "transform":[{
+"filter": {"field":"year", "equal": "10-Nov"} }],
+      "mark": {"type": "bar", "xOffset": -16, "size": 10},
+      "encoding": {
+        "y": {
+          "field": "value",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "category",
+          "type": "nominal",
+          "title": "category",
+          "legend" : null
+        }
+      }
+    },
+     {
+      "transform":[{
+"filter": {"field":"year", "equal": "11-Dec"} }],
+      "mark": {"type": "bar", "xOffset": -16, "size": 10},
+      "encoding": {
+        "y": {
+          "field": "value",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "category",
+          "type": "nominal",
+          "title": "category",
+          "legend" : null
+        }
+      }
+    },
+     {
+      "transform":[{
+"filter": {"field":"year", "equal": "2012-13"} }],
+      "mark": {"type": "bar", "xOffset": -16, "size": 10},
+      "encoding": {
+        "y": {
+          "field": "value",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "category",
+          "type": "nominal",
+          "title": "category",
+          "legend" : null
+        }
+      }
+    },
+     {
+      "transform":[{
+"filter": {"field":"year", "equal": "2013-14"} }],
+      "mark": {"type": "bar", "xOffset": -16, "size": 10},
+      "encoding": {
+        "y": {
+          "field": "value",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "category",
+          "type": "nominal",
+          "title": "category",
+          "legend" : null
+        }
+      }
+    },
+     {
+      "transform":[{
+"filter": {"field":"year", "equal": "2014-15"} }],
+      "mark": {"type": "bar", "xOffset": -16, "size": 10},
+      "encoding": {
+        "y": {
+          "field": "value",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "category",
+          "type": "nominal",
+          "title": "category",
+          "legend" : null
+        }
+      }
+    },
+     {
+      "transform":[{
+"filter": {"field":"year", "equal": "2015-16"} }],
+      "mark": {"type": "bar", "xOffset": -16, "size": 10},
+      "encoding": {
+        "y": {
+          "field": "value",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "category",
+          "type": "nominal",
+          "title": "category",
+          "legend" : null
+        }
+      }
+    },
+     {
+      "transform":[{
+"filter": {"field":"year", "equal": "2016-17"} }],
+      "mark": {"type": "bar", "xOffset": -16, "size": 10},
+      "encoding": {
+        "y": {
+          "field": "value",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "category",
+          "type": "nominal",
+          "title": "category",
+          "legend" : null
+        }
+      }
+    },
+     {
+      "transform":[{
+"filter": {"field":"year", "equal": "2017-18"} }],
+      "mark": {"type": "bar", "xOffset": -16, "size": 10},
+      "encoding": {
+        "y": {
+          "field": "value",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "category",
+          "type": "nominal",
+          "title": "category",
+          "legend" : null
+        }
+      }
+    },
+     {
+      "transform":[{
+"filter": {"field":"year", "equal": "2018-19"} }],
+      "mark": {"type": "bar", "xOffset": -16, "size": 10},
+      "encoding": {
+        "y": {
+          "field": "value",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "category",
+          "type": "nominal",
+          "title": "category",
+          "legend" : null
+        }
+      }
+    }
+  ]
+}
