@@ -1,0 +1,26 @@
+
+ {
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {"url": "https://raw.githubusercontent.com/qt19623/qt19623.github.io/main/project/environmental%20impact.csv"},
+  "mark": "bar",
+"transform":[
+    {"filter":{"field":"type",
+ "oneOf":["GHG", "Water Use", "Land Use"]}}],
+
+  "encoding": {
+
+   
+    "x": {
+      "field": "year",
+      "type": "ordinal"
+    },
+    "y": {
+      "aggregate": "sum",
+      "field": "value",
+      "type": "quantitative"
+
+    },
+    "color":{"field":"category"},
+    "row": {"field": "type"}
+  }
+}
