@@ -10,9 +10,10 @@
   },
 
   "data": {
-    "url": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.PCAP.CD?format=json&per_page=16226&date=2000:2010",
+    "url": "https://raw.githubusercontent.com/qt19623/qt19623.github.io/main/week10/rawrealGDP.json",
     "format":{
-        "type":"json"
+        "type":"json",
+      "property": "observations"
       }
   },
 
