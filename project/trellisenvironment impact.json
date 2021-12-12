@@ -1,12 +1,15 @@
-
  {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "data": {"url": "https://raw.githubusercontent.com/qt19623/qt19623.github.io/main/project/environmental%20impact.csv"},
   "mark": "bar",
 "transform":[
     {"filter":{"field":"type",
- "oneOf":["GHG", "Water Use", "Land Use"]}}],
-
+ "oneOf":["GHG", "Water Use", "Land Use"]}},
+ {
+    "calculate": "if(datum.site === 'Beef', 0, if(datum.site === 'Total fish', 1, 2))",
+    "as": "siteOrder"
+  }
+ ],
   "encoding": {
 
    
@@ -21,6 +24,8 @@
 
     },
     "color":{"field":"category"},
-    "row": {"field": "type"}
+    "row": {"field": "type", "type": "nominal"},
+    "order": {"field": "siteOrder"}
+},
+    "resolve": {"scale": {"y" : "independent"}}
   }
-}
