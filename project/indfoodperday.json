@@ -12,7 +12,10 @@
         "options": [
           null,
          "Total fruit",
-        "Total fish"
+        "Total fish",
+        "Total red meat",
+        "Total white meat",
+        "Total vegetables"
         ],
         "name": "Pick a region: "
       }
@@ -21,7 +24,10 @@
 "transform":[
     {"filter": {"selection": "Region"}},
     {"filter":{"field":"category",
- "oneOf":["Total fruit", "Total vegetables", "Total fish", "Total red meat", "Total white meat"]}}],
+ "oneOf":["Total fruit", "Total vegetables", "Total fish", "Total red meat", "Total white meat"]}},
+ 
+    {"calculate": "if(datum.site === 'Total white meat', 0, if(datum.site === 'Total red meat', 1, 2))",
+    "as": "siteOrder"}],
 
   "encoding": {
     "x": {
@@ -31,8 +37,7 @@
     },
     "y": {
       "field":"value",
-      "type": "quantitative",
-      "scale": {"domain":[0,400]}},
+      "type": "quantitative"},
 
     "color": {
       "field": "category",
