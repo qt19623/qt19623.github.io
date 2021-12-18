@@ -1,0 +1,21 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data":{
+      "url":"https://api.stlouisfed.org/fred/series/observations?series_id=B230RC0A052NBEA&api_key=aace2d0e64131776dfba7046a45e526b&file_type=json",
+      "format":{
+        "type":"json",
+        "property":"observations"
+      }
+      },
+
+    "mark": "line",
+
+  
+    "encoding": {
+      
+      "x": {"field": "date", "type": "temporal", "title": null},
+      
+      "y": {"field": "value", "type": "quantitative", "title": null}
+      
+
+}}
