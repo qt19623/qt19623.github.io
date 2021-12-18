@@ -1,21 +1,65 @@
 {
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "data":{
-      "url":"https://api.stlouisfed.org/fred/series/observations?series_id=B230RC0A052NBEA&api_key=aace2d0e64131776dfba7046a45e526b&file_type=json",
-      "format":{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+    "title": {
+    "text": "Fred US population",
+    "subtitle": "Thousands, not seasonally adjusted",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+  },
+
+    "width":300,
+    "height":300,
+
+
+    "data": {
+      "url": "https://raw.githubusercontent.com/qt19623/qt19623.github.io/main/week10/data_USpop.json",
+      "format": {
         "type":"json",
-        "property":"observations"
-      }
-      },
-
-    "mark": "line",
-
+        "property": "observations"
+      }},
   
+    "mark":{
+      "type": "bar",
+      "strokeWidth":2,
+      "opacity":1
+    },
+
+   "transform": [ 
+     {"calculate": "year(datum.date)","as":"date2"},
+
+      {"filter": "datum.date2>minYear"}
+
+    ],
+
+    "params": [
+      {"name":"minYear",
+       "value":1929,
+         "bind":{
+           "input": "range",
+           "min": 1929, 
+           "max": 2019, 
+           "step": 1,
+           "name": "Pick start year"
+        }
+      }
+    ],
+
+
+
     "encoding": {
       
-      "x": {"field": "date", "type": "temporal", "title": null},
-      
-      "y": {"field": "value", "type": "quantitative", "title": null}
-      
-
-}}
+      "x": {
+        "field": "date", 
+        "type": "temporal",
+        "title":null
+        },
+  
+      "y": {
+        "field": "value", 
+        "type": "quantitative",
+        "title":null
+      }}
+}
