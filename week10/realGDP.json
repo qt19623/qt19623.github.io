@@ -8,32 +8,45 @@
     "anchor": "start",
     "color": "black"
   },
-
   "data": {
-    "url": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.PCAP.CD?format=json&per_page=16226&date=2000:2010"
-    :{
-        "type":"json",
-      "property": "observations"
-      }
+    "url": "https://raw.githubusercontent.com/qt19623/qt19623.github.io/main/week10/wbrealgdp.csv"      
   },
+ "selection": {
+    "Region": {
+      "type": "single",
+      "fields": ["Country"],
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+        "United Kingdom", "United States", "Spain","Italy","Slovenia","Vietnam"
+        ],
+        "name": "Pick a Country: "
+      }
+    }
+  },
+ "transform": [
+    {"filter": {"selection": "Region"}}, {"calculate": "toNumber(datum['NY.GDP.PCAP.CD'])","as":"Value"},
+  {"filter":{"field":"Country",
+ "oneOf":["United Kingdom", "United States", "Spain","Italy","Slovenia","Vietnam"]}} ],
 
   "height": 300,
   
-  "width": 280,
+  "width": 580,
   
   "mark": {"type": "line"},
   
   "encoding": {
     "x": {
-      "field": "date", 
+      "field": "Year", 
       "type":"temporal"},
     "y": {
-      "field": "value",
+      "field": "Value",
       "type": "quantitative"
     },
     
     "color": {
-      "field": "countryiso3code",
+      "field": "Country",
       "type": "nominal"
     }
   }
