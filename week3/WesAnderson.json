@@ -4,7 +4,7 @@
 
  "title": {
     "text": "Revenue of Wes Anderson films",
-    "subtitle": "",
+    "subtitle": "Source: Box Office Mojo",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
