@@ -13,8 +13,11 @@
 "transform":[
     {"filter":{"field":"type",
  "oneOf":["GHG", "Water Use", "Land Use"]}},
+ 
+    {"filter":{"field":"category",
+ "oneOf":["Beef", "Lamb", "Pork","Poultry"]}},
  {
-    "calculate": "if(datum.site === 'Beef', 0, if(datum.site === 'Total fish', 1, 2))",
+    "calculate": "if(datum.site === 'Beef', 0, if(datum.site === 'Poultry', 1, 2))",
     "as": "siteOrder"
   }
  ],
