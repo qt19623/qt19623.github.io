@@ -11,6 +11,14 @@
     "mark": "line",
 
   
+"title": {
+    "text": "Ageing population projections of UK",
+    "subtitle": "Source: ONS",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"},
+
     "encoding": {
       
       "x": {"field": "dimensions.Time.id", "type": "temporal", "title": null},
