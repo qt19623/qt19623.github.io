@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {"url": "https://raw.githubusercontent.com/qt19623/qt19623.github.io/main/project/indfoodperday.csv"},
+  "mark": "bar",
+"title": {
+    "text": "Change in daily meat intake",
+    "subtitle": "based on data of 2008-2009",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+  },
+"transform":[
+    {"filter":{"field":"category",
+ "oneOf":["Total red meat", "Total white meat"]}},
+ {"filter":{"field":"year",
+ "oneOf":["2009-10", "2010-11","2011-12","2012-13","2013-14","2014-15","2015-16","2016-17","2017-18","2018-19"]}},
+   {"calculate": "datum.category == 'Total red meat' ? 63.37470451-datum.value:datum.value", "as": "Value"},
+   {"calculate": "datum.category == 'Total white meat' ? 30.08617177-datum.Value:datum.Value", "as": "Value"}]
+,
+  "encoding": {
+    "y": {
+      "field": "year",
+      "type": "ordinal",
+      "title": "Survey year"
+    },
+    "x": {
+      "field":"Value",
+      "type": "quantitative",
+      "scale": {"domain": [-17, 17]}},
+
+    "color": {
+      "field": "category",
+      "type": "nominal",
+      "title": "category of food",
+      "scale": {"range": ["#E56E54", "#F3BC3E"]}
+    }
+  }
+}
