@@ -10,7 +10,14 @@
 
     "mark": "line",
 
-  
+   "title": {
+    "text": "Expenditures: Meats, Poultry, Fish, and Eggs by Size of Consumer Unit: Four People in Consumer Unit
+",
+    "subtitle": "Source: FRED",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"},
     "encoding": {
       
       "x": {"field": "date", "type": "temporal", "title": null},
