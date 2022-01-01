@@ -2,6 +2,8 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "data":{
       "url":"https://raw.githubusercontent.com/qt19623/qt19623.github.io/main/week5/data_FRED-CXUANIMALLB0506M.json",
+          "height": 300,
+  "width": 300,
       "format":{
         "type":"json",
         "property":"observations"
@@ -11,8 +13,7 @@
     "mark": "line",
 
    "title": {
-    "text": "Expenditures: Meats, Poultry, Fish, and Eggs by Size of Consumer Unit: Four People in Consumer Unit
-",
+    "text": "Expenditures: Meats, Poultry, Fish, and Eggs by Size of Consumer Unit: Four People in Consumer Unit",
     "subtitle": "Source: FRED",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
