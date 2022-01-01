@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": {
       "text": "Britons who attempted to change diet since March 2020",
-      "subtitle":"Base: Adults aged 16-75 in England, Wales and Northern Ireland",
+      "subtitle":"Base: Adults aged 16-75 in England, Wales and Northern Ireland, Source:IPsos",
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10,
       "anchor": "start",
