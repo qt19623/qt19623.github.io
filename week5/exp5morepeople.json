@@ -2,6 +2,8 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "data":{
       "url":"https://raw.githubusercontent.com/qt19623/qt19623.github.io/main/week5/data_FRED-CXUANIMALLB0507M.json",
+          "height": 300,
+  "width": 300,
       "format":{
         "type":"json",
         "property":"observations"
