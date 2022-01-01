@@ -2,6 +2,14 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "data": {"url": "https://raw.githubusercontent.com/qt19623/qt19623.github.io/main/project/environmental%20impact.csv"},
   "mark": "bar",
+  "title": {
+    "text": "Environmental impact of daily meat consumption in UK",
+    "subtitle": "Source: NDNS",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+  },
 "transform":[
     {"filter":{"field":"type",
  "oneOf":["GHG", "Water Use", "Land Use"]}},
