@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "Stock prices of 5 Tech Companies over Time.",
   "data": {"url": "https://raw.githubusercontent.com/qt19623/qt19623.github.io/main/project/HIGH_AGLINK_2021_02012022192426002.csv"},
-  "mark": {"type": "line"},
+ 
    "title": {
     "text": "World GHG emission from agricultural sector",
     "subtitle": "Source: OECD",
@@ -10,15 +10,27 @@
     "subtitleFontSize":10,
     "anchor": "start",
     "color": "black"},
-
-  "transform":[
+"layer":[
+  {"transform":[
     {"filter": {"field":"Variable", "equal":"Direct GHG emission"}}, 
    {"filter": {"field":"Country", "equal":"WORLD"}},
      {"filter": {"field":"Commodity", "equal":"Agricultural sector"}}
     ],
+     "mark": {"type": "line"},
   "encoding": {
     "x": {"timeUnit": "year", "field": "TIME"},
-    "y": { "field": "Value", "type": "quantitative"},
-    "color": {"field": "Variable", "type": "nominal"}
-  }
-}
+    "y": { "field": "Value", "type": "quantitative"}
+  }},
+  
+    {"transform":[
+    {"filter": {"field":"Variable", "equal":"Direct GHG emission"}}, 
+   {"filter": {"field":"Country", "equal":"WORLD"}},
+     {"filter": {"field":"Commodity", "oneOf":["Beef and veal","Sheepmeat","Poultry meat","Pigmeat"]}}
+    ],
+    "mark": {"type": "area"},
+  "encoding": {
+    "x": {"timeUnit": "year", "field": "TIME"},
+    "y": { "field": "Value", "type": "quantitative", "aggregate": "sum"},
+    "color": {"field": "Commodity", "type": "nominal"}
+  }}]
+    }
