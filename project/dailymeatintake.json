@@ -27,7 +27,7 @@
     "y": {
       "field":"Value",
       "type": "quantitative",
-      "scale": {"domain": [-17, 17]}},
+      "scale": {"domain": [-7, 17]}},
 
     "color": {
       "field": "category",
