@@ -19,12 +19,12 @@
    {"calculate": "datum.category == 'Total white meat' ? 30.08617177-datum.Value:datum.Value", "as": "Value"}]
 ,
   "encoding": {
-    "y": {
+    "x": {
       "field": "year",
       "type": "ordinal",
       "title": "Survey year"
     },
-    "x": {
+    "y": {
       "field":"Value",
       "type": "quantitative",
       "scale": {"domain": [-17, 17]}},
