@@ -15,8 +15,8 @@
  "oneOf":["Total red meat", "Total white meat"]}},
  {"filter":{"field":"year",
  "oneOf":["2009-10", "2010-11","2011-12","2012-13","2013-14","2014-15","2015-16","2016-17","2017-18","2018-19"]}},
-   {"calculate": "datum.category == 'Total red meat' ? 63.37470451-datum.value:datum.value", "as": "Value"},
-   {"calculate": "datum.category == 'Total white meat' ? 30.08617177-datum.Value:datum.Value", "as": "Value"}]
+   {"calculate": "datum.category == 'Total red meat' ? datum.value-63.37470451:datum.value", "as": "Value"},
+   {"calculate": "datum.category == 'Total white meat' ? datum.Value-30.08617177:datum.Value", "as": "Value"}]
 ,
   "encoding": {
     "x": {
@@ -27,7 +27,7 @@
     "y": {
       "field":"Value",
       "type": "quantitative",
-      "scale": {"domain": [-7, 17]}},
+      "scale": {"domain": [-17, 7]}},
 
     "color": {
       "field": "category",
