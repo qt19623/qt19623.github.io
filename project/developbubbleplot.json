@@ -1,0 +1,107 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "description": "UK CPI data visualisation",
+
+  "title": {
+    "text": "This month - top risers",
+    "subtitle": "Hover for item detail. Bubble size based on median price",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+  },
+
+  "config": {
+  "background":"white",
+  "view": {
+    "stroke": "transparent"}},
+
+
+  "data": {
+    "url": "https://raw.githubusercontent.com/qt19623/qt19623.github.io/main/project/HIGH_AGLINK_2021_02012022192426002.csv"
+  },
+
+  "height":500,
+  "width":400,
+"layer":[
+{"transform":[
+    {"filter":{"field":"Commodity",
+ "oneOf":["Beef and veal", "Poultry meat", "Sheepmeat","Pigmeat"]}},
+
+    {"filter":{"field":"Variable",
+ "equal":"Food"}},
+ {"filter":{"field":"Country",
+ "equal":"DEVELOPING COUNTRIES"}}
+ ],
+
+  "mark":{
+      "type":"circle",
+      "opacity":0.8,
+      "size":60,
+      "xOffset": -15
+  },
+    "encoding": {
+    "y": {
+        "field": "TIME",
+        "type": "temporal",
+        "axis":{
+          "grid": false},
+        "scale": {"zero": false},
+        "title": null},
+
+    "x": {
+      "field": "Commodity",
+      "type": "nominal",
+      "axis":{
+        "grid": false},
+      "scale": {"zero": true},
+      "title": "Type of meat"},
+
+    "size": {
+      "field": "Value",
+      "type": "quantitative",
+      "title": "Price",
+       "scale": {"rangeMin":1, "rangeMax": 1500}
+      },
+    "color":{"field":"Country"}  }},{"transform":[
+    {"filter":{"field":"Commodity",
+ "oneOf":["Beef and veal", "Poultry meat", "Sheepmeat","Pigmeat"]}},
+
+    {"filter":{"field":"Variable",
+ "equal":"Food"}},
+ {"filter":{"field":"Country",
+ "equal":"DEVELOPED COUNTRIES"}}
+ ],
+
+  "mark":{
+      "type":"circle",
+      "opacity":0.8,
+      "size":60,
+      "xOffset":15
+      
+  },
+    "encoding": {
+    "y": {
+        "field": "TIME",
+        "type": "temporal",
+        "axis":{
+          "grid": false},
+        "scale": {"zero": false},
+        "title": null},
+
+    "x": {
+      "field": "Commodity",
+      "type": "nominal",
+      "axis":{
+        "grid": false},
+      "scale": {"zero": true},
+      "title": "Type of meat"},
+
+    "size": {
+      "field": "Value",
+      "type": "quantitative",
+      "title": "Price"
+      },
+    "color":{"field":"Country"}  }}]
+      }
