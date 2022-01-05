@@ -4,8 +4,8 @@
   "description": "UK CPI data visualisation",
 
   "title": {
-    "text": "This month - top risers",
-    "subtitle": "Hover for item detail. Bubble size based on median price",
+    "text": "Aggregate meat as food in developed countries and devloping countries",
+    "subtitle": "Bubble size based on weight of meat, Source: OECD",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
@@ -48,7 +48,7 @@
         "axis":{
           "grid": false},
         "scale": {"zero": false},
-        "title": null},
+        "title": "Year"},
 
     "x": {
       "field": "Commodity",
@@ -61,8 +61,8 @@
     "size": {
       "field": "Value",
       "type": "quantitative",
-      "title": "Price",
-       "scale": {"rangeMin":1, "rangeMax": 1500}
+      "title": "1000 tonnes",
+       "scale": {"rangeMin":1, "rangeMax": 2000}
       },
     "color":{"field":"Country"}  }},{"transform":[
     {"filter":{"field":"Commodity",
@@ -88,7 +88,7 @@
         "axis":{
           "grid": false},
         "scale": {"zero": false},
-        "title": null},
+        "title": "Year"},
 
     "x": {
       "field": "Commodity",
@@ -101,7 +101,7 @@
     "size": {
       "field": "Value",
       "type": "quantitative",
-      "title": "Price"
+      "title": "1000 tonnes"
       },
     "color":{"field":"Country"}  }}]
       }
