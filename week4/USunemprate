@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "US Monthly Unemployment Rate(16 and older)",
+    "subtitle": "Source: alphavantage",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://www.alphavantage.co/query?function=UNEMPLOYMENT&apikey=60bff8fb26cd5e3cee014028",
+    "format": {"type": "json", 
+    "property": "data"
+    }
+  },
+  "height": 300,
+  "width": 300,
+  "mark": {"type": "circle", "color": "pink"},
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": null,
+      "axis": {"grid": false}
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative",
+      "title": null,
+      "axis": {"grid": false},
+      "scale": {"domain": [0, 16]}
+    }
+  },
+  "config": {}
+}
