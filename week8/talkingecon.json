@@ -1,0 +1,29 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple bar chart with embedded data",
+
+ "title": {
+    "text": "Expected financial cost of delayed climate action from climate transition-related market and credit risk",
+    "subtitle": "Sample from climate critical sectors(in billion US$), Source: Climate Stress Testing and Scenarios Project (CSTS)",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"},
+
+  "data": {
+    "values": [
+      {"a":"Carbon Balance 2026", "b": 2149},{"a":"Carbon Balance 2030", "b": 2529},{"a":"Carbon Balance 2035", "b": 3499}
+    ]
+    },
+  "height": 100,
+  "width": 300,
+"mark":{
+  "type" : "bar",
+  "color" :"skyblue",
+  "size" : 20
+},
+"encoding": {
+  "y":{"field":"a","type":"nominal", "title":null},
+  "x":{"field":"b", "type":"quantitative","title":"Loss from transition risk (in billion US$)"}
+}
+}
