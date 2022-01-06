@@ -18,7 +18,7 @@
   
 "mark":{
   "type" : "bar",
-  "color" :"violet",
+  "color" :"pink",
   "size" : 17
 },
 "encoding": {
