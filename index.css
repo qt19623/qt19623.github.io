@@ -41,6 +41,21 @@ p{
 }
 
 
-.chart:hover {
-background-color: #9ead92;
-    }
+.chart:hover { transform: scale(1.1); }
+
+.links {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 10px;
+    font-size: 20px;
+    text-align: center;
+    color: darkbrown;
+    border-radius: 10px;
+    background-color: #c2d4b4;
+  font-family: 'Poppins', sans-serif ;
+}
+
+
+.links:hover { transform: scale(1.1); }
+
+
