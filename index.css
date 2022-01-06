@@ -2,7 +2,7 @@
 
 body{
 
-    background-color: #cfedcc ;
+    background-color: #9ead92 ;
     max-width: 100%;
     margin: auto;
 }
@@ -42,5 +42,5 @@ p{
 
 
 .chart:hover {
-background-color: #cfedcc;
+background-color: #9ead92;
     }
