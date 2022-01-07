@@ -1,0 +1,86 @@
+﻿Country,Commodity,TIME,Value,gdppc
+Australia,Beef and veal,2020,28.019,46675.4
+Australia,Pigmeat,2020,18.266,46675.4
+Australia,Poultry meat,2020,43.085,46675.4
+Australia,Sheepmeat,2020,7.375,46675.4
+Canada,Beef and veal,2020,17.491,43348.1
+Canada,Pigmeat,2020,16.71,43348.1
+Canada,Poultry meat,2020,34.437,43348.1
+Canada,Sheepmeat,2020,0.896,43348.1
+Chile,Beef and veal,2020,19.195,21299.2
+Chile,Pigmeat,2020,16.955,21299.2
+Chile,Poultry meat,2020,33.62,21299.2
+Chile,Sheepmeat,2020,0.364,21299.2
+Colombia,Beef and veal,2020,9.65,12900
+Colombia,Pigmeat,2020,8.173,12900
+Colombia,Poultry meat,2020,30.24,12900
+Colombia,Sheepmeat,2020,0.206,12900
+Israel,Beef and veal,2020,21.73,37191.6
+Israel,Pigmeat,2020,1.24,37191.6
+Israel,Poultry meat,2020,60.147,37191.6
+Israel,Sheepmeat,2020,1.388,37191.6
+Japan,Beef and veal,2020,7.426,40629
+Japan,Pigmeat,2020,16.208,40629
+Japan,Poultry meat,2020,17.863,40629
+Japan,Sheepmeat,2020,0.16,40629
+Korea,Beef and veal,2020,11.313,41369.9
+Korea,Pigmeat,2020,29.521,41369.9
+Korea,Poultry meat,2020,18.38,41369.9
+Korea,Sheepmeat,2020,0.311,41369.9
+Mexico,Beef and veal,2020,9.021,17301.2
+Mexico,Pigmeat,2020,14.125,17301.2
+Mexico,Poultry meat,2020,31.404,17301.2
+Mexico,Sheepmeat,2020,0.784,17301.2
+New Zealand,Beef and veal,2020,10.496,38607.4
+New Zealand,Pigmeat,2020,18.117,38607.4
+New Zealand,Poultry meat,2020,40.487,38607.4
+New Zealand,Sheepmeat,2020,3.662,38607.4
+Norway,Beef and veal,2020,13.076,60922.8
+Norway,Pigmeat,2020,20.192,60922.8
+Norway,Poultry meat,2020,17.134,60922.8
+Norway,Sheepmeat,2020,4.376,60922.8
+Russia,Beef and veal,2020,9.73,24982.4
+Russia,Pigmeat,2020,21.657,24982.4
+Russia,Poultry meat,2020,27.44,24982.4
+Russia,Sheepmeat,2020,1.165,24982.4
+Saudi Arabia,Beef and veal,2020,3.913,43657.6
+Saudi Arabia,Pigmeat,2020,0.33,43657.6
+Saudi Arabia,Poultry meat,2020,35.801,43657.6
+Saudi Arabia,Sheepmeat,2020,4.476,43657.6
+South Africa,Poultry meat,2020,35.516,12655.3
+South Africa,Pigmeat,2020,3.743,12655.3
+South Africa,Beef and veal,2020,10.661,12655.3
+South Africa,Sheepmeat,2020,2.59,12655.3
+Switzerland,Beef and veal,2020,13.678,66674.3
+Switzerland,Pigmeat,2020,21.032,66674.3
+Switzerland,Poultry meat,2020,12.527,66674.3
+Switzerland,Sheepmeat,2020,1.301,66674.3
+Turkey,Sheepmeat,2020,4.837,28491.3
+Turkey,Poultry meat,2020,18.135,28491.3
+Turkey,Pigmeat,2020,0,28491.3
+Turkey,Beef and veal,2020,8.855,28491.3
+United Kingdom,Beef and veal,2020,11.324,40700.4
+United Kingdom,Pigmeat,2020,16.078,40700.4
+United Kingdom,Poultry meat,2020,27.065,40700.4
+United Kingdom,Sheepmeat,2020,3.917,40700.4
+United States,Beef and veal,2020,26.411,58297.5
+United States,Pigmeat,2020,23.616,58297.5
+United States,Poultry meat,2020,50.756,58297.5
+United States,Sheepmeat,2020,0.435,58297.5
+Australia,Total meat,2020,96.745,46675.4
+Canada,Total meat,2020,69.534,43348.1
+Chile,Total meat,2020,70.134,21299.2
+Colombia,Total meat,2020,48.269,12900
+Israel,Total meat,2020,84.505,37191.6
+Japan,Total meat,2020,41.657,40629
+Korea,Total meat,2020,59.525,41369.9
+Mexico,Total meat,2020,55.334,17301.2
+New Zealand,Total meat,2020,72.762,38607.4
+Norway,Total meat,2020,54.778,60922.8
+Russia,Total meat,2020,59.992,24982.4
+Saudi Arabia,Total meat,2020,44.52,43657.6
+South Africa,Total meat,2020,52.51,12655.3
+Switzerland,Total meat,2020,48.538,66674.3
+Turkey,Total meat,2020,31.827,28491.3
+United Kingdom,Total meat,2020,58.384,40700.4
+United States,Total meat,2020,101.218,58297.5
