@@ -8,6 +8,7 @@
       "anchor": "start",
       "color": "black"
     },
+    "height":150,"width":150,
   "data": {
     "values": [
       {"category": "yes", "value":55, "type":"To improve health"},
