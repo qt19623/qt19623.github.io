@@ -4,7 +4,7 @@
   "description": "UK CPI data visualisation",
 
   "title": {
-    "text": "Aggregate meat as food in developed countries and devloping countries",
+    "text": "Annual individual meat consumption in developed countries and devloping countries",
     "subtitle": "Bubble size based on weight of meat, Source: OECD",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
