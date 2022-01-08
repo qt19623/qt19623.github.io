@@ -34,7 +34,7 @@
       "type": "quantitative"
 
     },
-    "color":{"field":"category"},
+    "color":{"field":"category","scale":  {"range":["LightSalmon","Gold","PaleGoldenrod","LightBlue"]}},
     "row": {"field": "type", "type": "nominal"},
     "order": {"field": "siteOrder"}
 },
