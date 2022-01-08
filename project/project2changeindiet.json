@@ -23,6 +23,6 @@
     "facet": {"field": "type"},
 
     "theta": {"field": "value", "type": "quantitative"},
-    "color": {"field": "category", "type": "nominal"}
+    "color": {"field": "category", "type": "nominal","scale":  {"domain":["yes","no","other"],"range":["salmon","PeachPuff","PapayaWhip"]}}
   }
 }
