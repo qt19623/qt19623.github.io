@@ -1,0 +1,104 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "description": "UK CPI data visualisation",
+
+  "title": {
+    "text": "Aggregate meat as food in developed countries and devloping countries",
+    "subtitle": "Bubble size based on weight of meat, Source: OECD",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+  },
+
+  "config": {
+  "background":"white",
+  "view": {
+    "stroke": "transparent"}},
+
+  "data": {
+    "url": "https://raw.githubusercontent.com/qt19623/qt19623.github.io/main/project/Humanconsumptionpercapita.csv"
+  },
+
+  "height":500,
+  "width":400,
+"layer":[
+{"transform":[
+    {"filter":{"field":"Commodity",
+ "oneOf":["Beef and veal", "Poultry meat", "Sheepmeat","Pigmeat"]}},
+
+ {"filter":{"field":"Country",
+ "equal":"DEVELOPING COUNTRIES"}}
+ ],
+
+  "mark":{
+      "type":"circle",
+      "opacity":0.8,
+      "size":60,
+      "xOffset": -15
+  },
+    "encoding": {
+    "y": {
+        "field": "TIME",
+        "type": "temporal",
+        "axis":{
+          "grid": false},
+        "scale": {"zero": false},
+        "title": "Year"},
+
+    "x": {
+      "field": "Commodity",
+      "type": "nominal",
+      "axis":{
+        "grid": false},
+      "scale": {"zero": true},
+      "title": "Type of meat"},
+
+    "size": {
+      "field": "Value",
+      "type": "quantitative",
+      "title": "1000 tonnes",
+       "scale": {"rangeMin":1, "rangeMax": 2000}
+      },
+    "color":{"field":"Country"}  }},{"transform":[
+    {"filter":{"field":"Commodity",
+ "oneOf":["Beef and veal", "Poultry meat", "Sheepmeat","Pigmeat"]}},
+
+ {"filter":{"field":"Country",
+ "equal":"DEVELOPED COUNTRIES"}}
+ ],
+
+  "mark":{
+      "type":"circle",
+      "opacity":0.8,
+      "size":60,
+      "xOffset":15
+      
+  },
+    "encoding": {
+    "y": {
+        "field": "TIME",
+        "type": "temporal",
+        "axis":{
+          "grid": false},
+        "scale": {"zero": false},
+        "title": "Year"},
+
+    "x": {
+      "field": "Commodity",
+      "type": "nominal",
+      "axis":{
+        "grid": false},
+      "scale": {"zero": true},
+      "title": "Type of meat"},
+
+    "size": {
+      "field": "Value",
+      "type": "quantitative",
+      "title": "kg"
+      
+      },
+    "color":{"field":"Country"}  }}]
+      }
+
