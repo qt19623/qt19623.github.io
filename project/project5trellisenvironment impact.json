@@ -4,7 +4,7 @@
   "mark": "bar",
   "title": {
     "text": "Environmental impact of daily meat consumption in UK",
-    "subtitle": "Source: NDNS",
+    "subtitle": "Source: NDNS, FAO",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
@@ -12,7 +12,7 @@
   },
 "transform":[
     {"filter":{"field":"type",
- "oneOf":["GHG", "Water Use", "Land Use"]}},
+ "oneOf":["GHG (kgCO₂eq) ", "Water Use (L)", "Land Use (m²)"]}},
  
     {"filter":{"field":"category",
  "oneOf":["Beef", "Lamb", "Pork","Poultry"]}},
@@ -22,21 +22,24 @@
   }
  ],
   "encoding": {
-
-   
     "x": {
       "field": "year",
-      "type": "ordinal"
+      "type": "ordinal",
+      "title":"Year"
     },
     "y": {
       "aggregate": "sum",
       "field": "value",
-      "type": "quantitative"
-
+      "type": "quantitative",
+      "title":null
     },
-    "color":{"field":"category","scale":  {"range":["LightSalmon","Gold","PaleGoldenrod","LightBlue"]}},
-    "row": {"field": "type", "type": "nominal"},
-    "order": {"field": "siteOrder"}
+    "color":{"field":"category","scale":  {"range":["LightSalmon","Gold","PaleGoldenrod","LightBlue"]},"title":null},
+    "row": {"field": "type", "type": "nominal","title":null},
+    "order": {"field": "siteOrder"},
+     "tooltip": [
+      {"field": "value", "type": "quantitative"},
+      {"field": "category", "type": "nominal"}
+    ]
 },
     "resolve": {"scale": {"y" : "independent"}}
   }
