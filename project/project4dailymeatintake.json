@@ -4,7 +4,7 @@
   "mark": "bar",
 "title": {
     "text": "Change in daily meat intake",
-    "subtitle": "based on data of 2008-2009",
+    "subtitle": "Compared to 2008-2009 value, Source: NDNS",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
@@ -27,13 +27,18 @@
     "y": {
       "field":"Value",
       "type": "quantitative",
-      "scale": {"domain": [-17, 7]}},
+      "scale": {"domain": [-17, 7]},
+      "title":"Average daily intake change(g)"},
 
     "color": {
       "field": "category",
       "type": "nominal",
-      "title": "category of food",
+      "title": null,
       "scale": {"range": ["salmon", "peachpuff"]}
-    }
+    },
+    "tooltip": [
+      {"field": "category", "type": "nominal"},
+      {"field": "Value", "type": "quantitative"}
+    ]
   }
 }
