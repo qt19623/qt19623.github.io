@@ -1,0 +1,67 @@
+
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/qt19623/qt19623.github.io/main/project/gdpmeatcorr.csv"
+  },
+  
+"transform":[
+    {"filter":{"field":"Commodity",
+ "equal":"Total meat"}}],
+  "layer": [
+    {
+      "mark": {
+        "type": "point",
+        "filled": true
+      },
+      "encoding": {
+        "x": {
+          "field": "gdppc",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Value",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "color": "firebrick"
+      },
+      "transform": [
+        {
+          "regression": "Value",
+          "on": "gdppc"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "gdppc",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Value",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "regression": "Value",
+          "on": "gdppc",
+          "params": true
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "color": "firebrick",
+        "x": "width",
+        "align": "right",
+        "y": -5
+      }
+    }
+  ]
+}
