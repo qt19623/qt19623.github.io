@@ -4,7 +4,14 @@
   "data": {
     "url": "https://raw.githubusercontent.com/qt19623/qt19623.github.io/main/project/gdpmeatcorr.csv"
   },
-  
+    "title": {
+    "text": "Annual individual meat consumption in developed countries and devloping countries",
+    "subtitle": "Bubble size based on weight of meat, Source: OECD",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+  },
 "transform":[
     {"filter":{"field":"Commodity",
  "equal":"Total meat"}}],
@@ -12,7 +19,8 @@
     {
       "mark": {
         "type": "point",
-        "filled": true
+        "filled": true,
+        "color": "salmon"
       },
       "encoding": {
         "x": {
@@ -21,8 +29,13 @@
         },
         "y": {
           "field": "Value",
-          "type": "quantitative"
-        }
+          "type": "quantitative",
+          "title":"meat consumption(kg)"
+        },
+     "tooltip": [
+      {"field": "Value","title":"kg", "type": "quantitative"},
+      {"field": "Country", "type": "nominal"}
+    ]
       }
     },
     {
@@ -45,22 +58,6 @@
           "field": "Value",
           "type": "quantitative"
         }
-      }
-    },
-    {
-      "transform": [
-        {
-          "regression": "Value",
-          "on": "gdppc",
-          "params": true
-        }
-      ],
-      "mark": {
-        "type": "text",
-        "color": "firebrick",
-        "x": "width",
-        "align": "right",
-        "y": -5
       }
     }
   ]
