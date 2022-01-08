@@ -4,7 +4,7 @@
   "description": "UK CPI data visualisation",
 
   "title": {
-    "text": "Annual individual meat consumption in developed countries and devloping countries",
+    "text": "Annual individual meat consumption in developed countries and devleoping countries",
     "subtitle": "Bubble size based on weight of meat, Source: OECD",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
@@ -52,7 +52,7 @@
       "axis":{
         "grid": false},
       "scale": {"zero": true},
-      "title": "Type of meat"},
+      "title": null},
 
     "size": {
       "field": "Value",
@@ -60,7 +60,7 @@
       "title": "1000 tonnes",
        "scale": {"rangeMin":1, "rangeMax": 1500}
       },
-    "column":{"field":"Country"},
+    "column":{"field":"Country","title":null},
     "color":{"field":"Commodity","scale":  {"range":["salmon","orange","gold","lightsalmon"]}  },
      "tooltip": [
       {"field": "Value", "type": "quantitative"}
