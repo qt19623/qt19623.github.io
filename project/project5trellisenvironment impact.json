@@ -21,6 +21,7 @@
     "as": "siteOrder"
   }
  ],
+ "height":300,"width":300,
   "encoding": {
     "x": {
       "field": "year",
