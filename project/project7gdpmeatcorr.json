@@ -1,17 +1,18 @@
-
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "data": {
     "url": "https://raw.githubusercontent.com/qt19623/qt19623.github.io/main/project/gdpmeatcorr.csv"
   },
     "title": {
-    "text": "Annual individual meat consumption in developed countries and devloping countries",
-    "subtitle": "Bubble size based on weight of meat, Source: OECD",
+    "text": "Linear regression of GDP per capita and meat consumption per capita",
+    "subtitle": "GDP per capita in US$, 2020, Source: OECD",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
     "color": "black"
   },
+  "height":300,
+  "width":300,
 "transform":[
     {"filter":{"field":"Commodity",
  "equal":"Total meat"}}],
@@ -25,12 +26,13 @@
       "encoding": {
         "x": {
           "field": "gdppc",
-          "type": "quantitative"
+          "type": "quantitative",
+          "title":"GDP per capita"
         },
         "y": {
           "field": "Value",
           "type": "quantitative",
-          "title":"meat consumption(kg)"
+          "title":"Total meat consumption(kg)"
         },
      "tooltip": [
       {"field": "Value","title":"kg", "type": "quantitative"},
