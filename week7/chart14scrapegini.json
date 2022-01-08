@@ -4,7 +4,8 @@
   "data": {
     "url": "https://raw.githubusercontent.com/qt19623/qt19623.github.io/main/week7/my_data.csv"
   },
-  "mark": "bar",
+  "mark":{"type": "bar","size":20, "xOffset":0}, 
+  "height":300,"width":300,
   "title": {
     "text": "Income Gini coefficient World 1988–2013",
     "subtitle": "Source: Wikipedia",
