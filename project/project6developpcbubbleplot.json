@@ -22,22 +22,21 @@
   },
 
   "height":500,
-  "width":400,
-"layer":[
-{"transform":[
+  "width":150,
+
+"transform":[
     {"filter":{"field":"Commodity",
  "oneOf":["Beef and veal", "Poultry meat", "Sheepmeat","Pigmeat"]}},
 
  {"filter":{"field":"Country",
- "equal":"DEVELOPING COUNTRIES"}}
+ "oneOf":["DEVELOPING COUNTRIES","DEVELOPED COUNTRIES"]}}
  ],
 
   "mark":{
       "type":"circle",
       "opacity":0.8,
       "size":60,
-      "xOffset": -15
-  },
+      "xOffset": 0},
     "encoding": {
     "y": {
         "field": "TIME",
@@ -59,46 +58,11 @@
       "field": "Value",
       "type": "quantitative",
       "title": "1000 tonnes",
-       "scale": {"rangeMin":1, "rangeMax": 2000}
+       "scale": {"rangeMin":1, "rangeMax": 1500}
       },
-    "color":{"field":"Country"}  }},{"transform":[
-    {"filter":{"field":"Commodity",
- "oneOf":["Beef and veal", "Poultry meat", "Sheepmeat","Pigmeat"]}},
-
- {"filter":{"field":"Country",
- "equal":"DEVELOPED COUNTRIES"}}
- ],
-
-  "mark":{
-      "type":"circle",
-      "opacity":0.8,
-      "size":60,
-      "xOffset":15
-      
-  },
-    "encoding": {
-    "y": {
-        "field": "TIME",
-        "type": "temporal",
-        "axis":{
-          "grid": false},
-        "scale": {"zero": false},
-        "title": "Year"},
-
-    "x": {
-      "field": "Commodity",
-      "type": "nominal",
-      "axis":{
-        "grid": false},
-      "scale": {"zero": true},
-      "title": "Type of meat"},
-
-    "size": {
-      "field": "Value",
-      "type": "quantitative",
-      "title": "kg"
-      
-      },
-    "color":{"field":"Country"}  }}]
+    "column":{"field":"Country"},
+    "color":{"field":"Commodity","scale":  {"range":["salmon","orange","gold","lightsalmon"]}  },
+     "tooltip": [
+      {"field": "Value", "type": "quantitative"}
+    ]}
       }
-
