@@ -33,7 +33,7 @@
       "field": "category",
       "type": "nominal",
       "title": "category of food",
-      "scale": {"range": ["salmon", "lightblue"]}
+      "scale": {"range": ["salmon", "peachpuff"]}
     }
   }
 }
