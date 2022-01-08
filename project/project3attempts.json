@@ -4,7 +4,7 @@
 
  "title": {
     "text": "Attempts to change diet since March 2020",
-    "subtitle": "Base: Adults aged 16-75 in England, Wales and Northern Ireland, Source: IPsos",
+    "subtitle": "Base: Adults aged 16-75 in England, Wales and Northern Ireland, Multiple answers,Source: IPsos",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
@@ -14,10 +14,13 @@
     "url": "https://raw.githubusercontent.com/qt19623/qt19623.github.io/main/project/attempts.csv"      
   },
       "mark": {"type": "bar", "size": 10},
-      "encoding": {"y":{"field":"measure"},
-        "x": {"field": "value", "type": "quantitative" },
+      "encoding": {"y":{"field":"measure","title":null},
+        "x": {"field": "value", "type": "quantitative","title":"% of participants" },
         "color":{
-          "field":"category","scale":  {"range":["PowderBlue"]},"legend":null
+          "field":"category","scale":  {"range":["yellowgreen"]},"legend":null
         },
-      "column": {"field": "category"}
+      "column": {"field": "category","title":null},
+      "tooltip": [
+      {"field": "value", "type": "quantitative","title":"%"}
+    ]
       }}
