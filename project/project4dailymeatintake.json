@@ -18,6 +18,7 @@
    {"calculate": "datum.category == 'Total red meat' ? datum.value-63.37470451:datum.value", "as": "Value"},
    {"calculate": "datum.category == 'Total white meat' ? datum.Value-30.08617177:datum.Value", "as": "Value"}]
 ,
+"height":300,"width":300,
   "encoding": {
     "x": {
       "field": "year",
