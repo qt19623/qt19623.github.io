@@ -9,7 +9,7 @@
     "subtitleFontSize":10,
     "anchor": "start",
     "color": "black"},
-
+"height":100,"width":150,
   "data": {
     "url": "https://raw.githubusercontent.com/qt19623/qt19623.github.io/main/project/attempts.csv"      
   },
