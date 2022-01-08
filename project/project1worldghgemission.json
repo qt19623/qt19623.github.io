@@ -32,6 +32,10 @@
   "encoding": {
     "x": {"timeUnit": "year", "field": "TIME"},
     "y": { "field": "Value", "type": "quantitative", "aggregate": "sum"},
-    "color": {"field": "Commodity", "type": "nominal","scale":  {"domain":["Poultry meat","Sheepmeat","Pigmeat","Beef and veal","Agricultural sector"],"scheme":"reds"}}
+    "color": {"field": "Commodity", "type": "nominal","scale":  {"domain":["Poultry meat","Sheepmeat","Pigmeat","Beef and veal","Agricultural sector"],"scheme":"reds"}},
+    ,
+     "tooltip": [
+      {"field": "Commodity", "type": "nominal"}
+    ]
   }}]
     }
