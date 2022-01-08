@@ -10,7 +10,7 @@
     },
   "data": {
     "values": [
-      {"category": "yes", "value":55,"type":"To improve health"},
+      {"category": "yes", "value":55, "type":"To improve health"},
       {"category": "no", "value": 38,"type":"To improve health"},
       {"category": "other", "value": 7,"type":"To improve health"},
       {"category": "yes", "value":40, "type":"To improve sustainability"},
@@ -20,9 +20,13 @@
   },
   "mark": "arc",
   "encoding": {
-    "facet": {"field": "type"},
-
+    "facet": {"field": "type","title":"I have changed diet"},
     "theta": {"field": "value", "type": "quantitative"},
-    "color": {"field": "category", "type": "nominal","scale":  {"domain":["yes","no","other"],"range":["salmon","PeachPuff","PapayaWhip"]}}
+    "color": {"field": "category", "type": "nominal","scale":  {"domain":["yes","no","other"],"range":["salmon","PeachPuff","PapayaWhip"]},"title":null},
+     "tooltip": [
+      {"field": "category", "type": "nominal","title":null},
+      {"field": "value", "type": "nominal","title":"%"}
+
+    ]
   }
 }
