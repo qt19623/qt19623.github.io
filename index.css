@@ -2,7 +2,7 @@
 
 body{
 
-    background-color: #9ead92 ;
+    background-color: #E5E4E2 ;
     max-width: 450px;
     margin: auto;
 }
@@ -49,13 +49,13 @@ p{
     padding: 0 10px;
     font-size: 20px;
     text-align: center;
-    color: darkbrown;
+    color: black;
     border-radius: 10px;
-    background-color: #c2d4b4;
+    background-color: #DCDCDC;
   font-family: 'Poppins', sans-serif ;
 }
 
 
-.links:hover { transform: scale(1.1); }
+.links:hover { transform: scale(1.05); }
 
 
