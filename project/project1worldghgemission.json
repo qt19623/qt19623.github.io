@@ -19,7 +19,8 @@
      "mark": {"type": "line"},
   "encoding": {
     "x": {"timeUnit": "year", "field": "TIME"},
-    "y": { "field": "Value", "type": "quantitative"}
+    "y": { "field": "Value", "type": "quantitative"},
+    "color": {"field": "Commodity", "type": "nominal"}
   }},
   
     {"transform":[
@@ -31,6 +32,6 @@
   "encoding": {
     "x": {"timeUnit": "year", "field": "TIME"},
     "y": { "field": "Value", "type": "quantitative", "aggregate": "sum"},
-    "color": {"field": "Commodity", "type": "nominal"}
+    "color": {"field": "Commodity", "type": "nominal","scale":  {"domain":["Poultry meat","Sheepmeat","Pigmeat","Beef and veal","Agricultural sector"],"scheme":"reds"}}
   }}]
     }
