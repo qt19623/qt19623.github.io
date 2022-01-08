@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/qt19623/qt19623.github.io/main/project/worldpop.csv"
+  },
+  "title": {
+    "text": "World population estimates and projections",
+    "subtitle": "Population estimates (yellow) and projections (green), Source: World Bank",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "height": 300,
+  "width": 300,
+ "layer":[
+ {"transform":[{"filter": {"timeUnit": "year", "field": "Year", "lte": "2020"}}],
+    "mark": {"type": "area", "color":"gold"},
+      "encoding": {
+        "x": {"timeUnit": "year", "field": "Year", "title": "Year",
+          "axis":{"grid":false}},
+        "y": {
+          "field": "World Population (1000)",
+          "type": "quantitative",
+          "title": "World Population (1,000)",
+          "axis":{"grid":false}
+        },
+        "tooltip": [{"field": "World Population (1000)", "type": "quantitative"},
+        {"field": "Year", "type": "temporal"}]
+      }},
+      
+ {"transform":[{"filter": {"timeUnit": "year", "field": "Year", "gte": "2020"}}],
+    "mark": {"type": "area", "color":"yellowgreen"},
+      "encoding": {
+        "x": {"timeUnit": "year", "field": "Year", "title": "Year",
+          "axis":{"grid":false}},
+        "y": {
+          "field": "World Population (1000)",
+          "type": "quantitative",
+          "title": "World Population (1,000)",
+          "axis":{"grid":false}
+        },
+        "tooltip": [{"field": "World Population (1000)", "type": "quantitative"},
+        {"field": "Year", "type": "temporal"}]
+      }}
+  
+ ]}
