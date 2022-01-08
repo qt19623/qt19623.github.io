@@ -11,6 +11,7 @@
       },
 
     "mark": "line",
+  "height":300,"width":300,
  "title": {
     "text": "Expenditures: Meats, Poultry, Fish, and Eggs by Size of Consumer Unit: Three People in Consumer Unit",
     "subtitle": "Source: FRED",
