@@ -59,3 +59,17 @@ p{
 .links:hover { transform: scale(1.02); }
 
 
+.python {
+    border: 0;
+    line-height: 2.5;
+    padding: 5px;
+    font-size: 12px;
+    text-align: center;
+    color: black;
+    border-radius: 10px;
+    background-color:#f4a688;
+  font-family: 'Poppins', sans-serif ;
+}
+
+.links:python { transform: scale(1.02); }
+
