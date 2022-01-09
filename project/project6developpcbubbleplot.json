@@ -57,7 +57,7 @@
     "size": {
       "field": "Value",
       "type": "quantitative",
-      "title": "1000 tonnes",
+      "title": "kg",
        "scale": {"rangeMin":1, "rangeMax": 1500}
       },
     "column":{"field":"Country","title":null},
