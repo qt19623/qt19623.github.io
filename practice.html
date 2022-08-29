@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+
+
+<!-- ///////////////////  HEAD //////////////////////////////////// -->
+
+<head>
+
+<!--The next three lines allow the Vega embed-->
+<script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+
+  
+   <link rel="stylesheet" href="index.css">
+  
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+</style>
+  
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+</style>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap');
+</style>
+ <style>
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+</style> 
+  
+</head>
+
+<!-- ///////////////////  HEAD //////////////////////////////////// -->
+
+
+
+<!-- ///////////////////  START BODY //////////////////////////////////// -->
+
+<body>
+
+  <h1>Data Science 2021</h1>
+  <h1> Student number: 1928653</h1>
+  <h2>Portfolio</h2>
+   
+  <a href="index.html">
+  <button class="links">Main</button>
+  </a>
+  
+  <a href="project.html">
+  <button class="links">Project</button>
+  </a>
+  
+<a href="https://github.com/qt19623/qt19623.github.io">
+  <button class="links">GitHub</button>
+  </a>
+  
+
+  
+  <h2>Week 1: Embedding three charts</h2> 
+ 
+<!--Chart 1 -->
+  <div class="chart" id="chart1">
+      <script>
+        var myChart1 = "week1/chart1_covidUKRegions.json";
+        vegaEmbed('#chart1', myChart1);
+      </script>
+  </div>
+  
+<!--Chart 2 -->
+<div class="chart" id="chart2">
+    <script>
+      var myChart2 = "week1/chart2_ukProductivity.json";
+      vegaEmbed('#chart2', myChart2);
+    </script>
+</div>
+<!--Chart 3 -->
+<div class="chart" id="chart3">
+    <script>
+      var myChart3 = "week1/charts_environment_chartENV6foodemissions.json";
+      vegaEmbed('#chart3', myChart3);
+    </script>
+</div>
+  
+
+  <h2>Week 2: Hosting data</h2>   
+  
+  <p>Chart from a given API</p>
+<!--Chart 4 -->
+<div class="chart" id="chart4">
+    <script>
+      var myChart4 = "week2/chart4MyCovidData2.json";
+      vegaEmbed('#chart4', myChart4);
+    </script>
+</div>
+  
+  <p>Chart from the same data saved in Github</p>
+    <!--Chart 5 -->
+<div class="chart" id="chart5">
+    <script>
+      var myChart5 = "week2/chart5MyCovidData.json";
+      vegaEmbed('#chart5', myChart5);
+    </script>
+</div>
+ 
+   <h2>Week 3: Editing data, writing JSON by hand</h2> 
+  <p>Chart using JSON written by hand</p>  
+  
+    <!--Chart 6 -->
+<div class="chart" id="chart6">
+    <script>
+      var myChart6 = "week3/chart6WesAnderson.json";
+      vegaEmbed('#chart6', myChart6);
+    </script>
+</div>
+  <p>Chart using data edited (two different dataset combined by hand on excel)</p>  
+    <!--Chart 7 -->
+<div class="chart" id="chart7">
+    <script>
+      var myChart7 = "week3/chart7beefpork.json";
+      vegaEmbed('#chart7', myChart7);
+    </script>
+</div>
+  
+  <h2>Week 4: API driven charts</h2>   
+    <!--Chart 8 -->
+<div class="chart" id="chart8">
+    <script>
+      var myChart8 = "week4/chart8USnatgasprice.json";
+      vegaEmbed('#chart8', myChart8);
+    </script>
+</div>
+     <!--Chart 9 -->
+<div class="chart" id="chart9">
+    <script>
+      var myChart9 = "week4/chart9USunemprate.json";
+      vegaEmbed('#chart9', myChart9);
+    </script>
+</div>
+  
+   <h2>Week 5: Loops and APIs</h2> 
+  
+<a href="week5/Loops1.ipynb">
+  <button class="python">link to python notebook used</button>
+  </a>
+   <!--Chart 10 -->
+<div class="chart" id="chart10">
+    <script>
+      var myChart10 = "week5/chart10exp2people.json";
+      vegaEmbed('#chart10', myChart10);
+    </script>
+</div>
+
+     <!--Chart 11 -->
+<div class="chart" id="chart11">
+    <script>
+      var myChart11 = "week5/chart11exp3people.json";
+      vegaEmbed('#chart11', myChart11);
+    </script>
+</div>
+
+     <!--Chart 12 -->
+<div class="chart" id="chart12">
+    <script>
+      var myChart12 = "week5/chart12exp4people.json";
+      vegaEmbed('#chart12', myChart12);
+    </script>
+</div>
+  
+     <!--Chart 13 -->
+<div class="chart" id="chart13">
+    <script>
+      var myChart13 = "week5/chart13exp5morepeople.json";
+      vegaEmbed('#chart13', myChart13);
+    </script>
+</div>
+  
+<h2>Week 7: Loops and scrapers</h2> 
+  
+<a href="week7/scraperlec.ipynb">
+  <button class="python">link to python notebook used</button>
+  </a>
+     <!--Chart 14 -->
+<div class="chart" id="chart14">
+    <script>
+      var myChart14 = "week7/chart14scrapegini.json";
+      vegaEmbed('#chart14', myChart14);
+    </script>
+</div>
+  <h2>Week 8: Data stories</h2> 
+    <p>This chart supports the statement made during the session “The next crisis?” in “Talking economics” conference by Dimitri Zenghelis. He mentioned that the cost of delaying taking climate action would be much more expensive than starting decarbonization now. Data from “The Cost for the Financial Sector if Firms Delay Climate Action” report by Climate Stress Testing and Scenarios Project is used. In the chart, as the point of time where we achieve carbon balance is delayed, expected loss from climate transition-related market and credit risk increases. This supports the statement that immediate decarbonization will lead to cost saving.</p>
+  <!--Chart 15 -->
+<div class="chart" id="chart15">
+    <script>
+      var myChart15 = "week8/chart15talkingecon.json";
+      vegaEmbed('#chart15', myChart15);
+    </script>
+</div>
+  <h2>Week 9: Advanced analytics</h2> 
+    <p>Real GDP data from the World Bank and PISA mathematics performance from OECD</p>
+<a href="week9/linear_regression.ipynb">
+  <button class="python">link to python notebook used</button>
+  </a>
+  <img class="fit-picture"
+     src="week9/fig1.png"
+     alt="Linear regression of real GDP and PISA mathematics performance">
+ 
+  <h2>Week 10: Interactivity</h2> 
+  <p>Interactive chart with slider</p>
+     <!--Chart 16 -->
+<div class="chart" id="chart16">
+    <script>
+      var myChart16 = "week10/chart16USpop.json";
+      vegaEmbed('#chart16', myChart16);
+    </script>
+</div>
+   <p>Interactive chart with dropdown</p>
+       <!--Chart 17 -->
+<div class="chart" id="chart17">
+    <script>
+      var myChart17 = "week10/chart17realGDP.json";
+      vegaEmbed('#chart17', myChart17);
+    </script>
+</div>
+</body>
+<!-- ///////////////////  END BODY //////////////////////////////////// -->
+
+</html>
